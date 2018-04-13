@@ -11,7 +11,7 @@ def main():
 
 @app.route('/success/<name>')
 def success(name=None):
-    retunr render_template('success.html')
+    retunr render_template('success.html', name = name)
     # return  'Main page %s ' % name
 
 @app.route('/login', methods=['GET' , 'POST'])
